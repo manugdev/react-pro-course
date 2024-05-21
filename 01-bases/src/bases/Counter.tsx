@@ -4,7 +4,7 @@ interface Props {
   initialValue?: number;
 }
 
-export const Counter = ({ initialValue = 0 }: Props) => {
+const Counter = ({ initialValue = 0 }: Props) => {
 
   const [counter, setCounter] = useState(initialValue)
 
@@ -21,3 +21,5 @@ export const Counter = ({ initialValue = 0 }: Props) => {
     </>
   )
 }
+
+export default Counter

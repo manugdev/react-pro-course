@@ -9,7 +9,7 @@ interface Counter {
   clicks: number
 }
 
-export const CounterBy = ({ initialValue = 5 }: Props) => {
+const CounterBy = ({ initialValue = 5 }: Props) => {
 
   const [ { counter, clicks }, setCounter ] = useState<Counter>({
     counter: initialValue,
@@ -33,3 +33,5 @@ export const CounterBy = ({ initialValue = 5 }: Props) => {
     </>
   )
 }
+
+export default CounterBy
